@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Idea Generator</title>
+</head>
+
+<body>
+    <header class="header">
+        <img>
+        <h1 class="header__content">Running out of ideas on what to eat today?</h1>
+        <h1 class="header__content">Welcome to your go - to meal generator!</h1>
+        <img>
+    </header>
+    <div>
+        <form class="form">
+            <div class="form__input-div">
+                <input type="text" id="formInput" name="formInput" class="form__input form__input--text"
+                    placeholder="Enter the cuisine here">
+                <button class="button form__input form__input--button" id="buttonSearch">Search</button>
+            </div>
+            <span class="form__divider">-------------------------------- OR --------------------------------</span>
+        </form>
+        <div class="form__input-div">
+            <button class="button form__input form__input--button" id="buttonRandom">Show random Meal</button>
+        </div>
+    </div>
+    <div class="meal-results">
+        <ul class="meal-results__container">
+            <li class="meal-results__list">
+                <img class="meal-results__image" src="./assets/easy-tomato-cream-rigatoni-3-500x500.jpg"
+                    alt="food-image">
+                <p class="meal-results__name">Foodie alert!!</p>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script> <!-- need to edit the path when file migration-->
+    <link rel="stylesheet" href="./styles/main.css">
+</body>
+
+</html>

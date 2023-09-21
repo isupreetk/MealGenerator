@@ -1,0 +1,91 @@
+.header {
+  background-color: bisque;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+.header__content {
+  color: #323232;
+}
+
+.button {
+  background-color: #000000;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px 30px 0px;
+}
+.form__input-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.form__input {
+  margin: 30px 10px;
+}
+.form__input--text {
+  font-size: 40px;
+  height: 60px;
+}
+.form__input--button {
+  height: 60px;
+  width: 15%;
+}
+.form__divider {
+  padding-top: 20px;
+  font-size: 20px;
+  color: #323232;
+}
+
+.meal-results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.meal-results__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meal-results__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meal-results__image {
+  height: 500px;
+  width: 500px;
+}
+.meal-results__name {
+  color: #b35252;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.meal-jokes__heading {
+  font-size: 30px;
+  color: #323232;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.meal-jokes__content {
+  font-size: 30px;
+  color: #323232;
+}/*# sourceMappingURL=main.css.map */
