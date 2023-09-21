@@ -73,7 +73,7 @@ function fetchByArea(country) {
       fetchById(aMealFromThatCountry.idMeal);
     })
     .catch(() => {
-      console.log("Yo! You broke something, and ya'll better find out soon");
+      alert("Yo! You broke something, and ya'll better find out soon");
     });
 }
 
@@ -95,7 +95,7 @@ function fetchById(id) {
       visualGeneration(foodName, foodImg);
     })
     .catch(() => {
-      console.log("You such a bug generator, man!");
+      alert("You such a bug generator, man!");
     });
 }
 
@@ -105,7 +105,6 @@ function fetchRandom() {
     .then((response) => {
       const foodName = response.data.meals[0].strMeal;
       const foodImg = response.data.meals[0].strMealThumb;
-      console.log(getCounter());
 
       visualGeneration(foodName, foodImg);
       if (getCounter() === 10) {
@@ -116,10 +115,9 @@ function fetchRandom() {
       } else if (getCounter() === 16) {
         alert("YOU ARE DONE! 😈 This is your food!");
       }
-      console.log(response.data.meals[0]);
     })
     .catch(() => {
-      console.log("yo? why you broke again? Call for backup!");
+      alert("Yo? Why you broke again? Call for backup!");
     });
 }
 
